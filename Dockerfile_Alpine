@@ -22,7 +22,7 @@ RUN apk update \
     && apk add musl-dev gcc make g++ file alpine-sdk cmake wget
 
 # Clone repo
-RUN git clone --recursive --depth=1 https://github.com/matyalatte/Texconv-Custom-DLL.git;\
+RUN git clone --recursive --depth=1 https://github.com/Lorenz-N/Texconv-Custom-DLL.git;\
     ash Texconv-Custom-DLL/shell_scripts/get_sal.sh
 
 # Build shared lib
